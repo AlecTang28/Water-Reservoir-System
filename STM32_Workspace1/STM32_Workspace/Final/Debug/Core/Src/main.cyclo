@@ -1,0 +1,12 @@
+../Core/Src/main.c:73:6:ADC_Select_CH	33
+../Core/Src/main.c:214:5:main	1
+../Core/Src/main.c:327:6:SystemClock_Config	3
+../Core/Src/main.c:369:13:MX_ADC1_Init	3
+../Core/Src/main.c:421:13:MX_TIM2_Init	6
+../Core/Src/main.c:480:13:MX_TIM3_Init	5
+../Core/Src/main.c:534:13:MX_USART1_UART_Init	2
+../Core/Src/main.c:567:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:600:13:MX_USART6_UART_Init	2
+../Core/Src/main.c:633:13:MX_GPIO_Init	1
+../Core/Src/main.c:708:6:DIGITS_Display	9
+../Core/Src/main.c:803:6:Error_Handler	1

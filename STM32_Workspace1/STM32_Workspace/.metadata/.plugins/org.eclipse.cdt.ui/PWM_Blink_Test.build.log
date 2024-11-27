@@ -1,0 +1,10 @@
+21:46:45 **** Incremental Build of configuration Debug for project PWM_Blink_Test ****
+make -j4 all 
+arm-none-eabi-size  PWM_Blink_Test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11280	     12	   1716	  13008	   32d0	PWM_Blink_Test.elf
+Finished building: default.size.stdout
+ 
+
+21:46:45 Build Finished. 0 errors, 0 warnings. (took 513ms)
+

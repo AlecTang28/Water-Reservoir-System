@@ -1,0 +1,28 @@
+19:46:15 **** Incremental Build of configuration Debug for project TIMER BOARD ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:9: warning: implicit declaration of function 'DIGITS_Display' [-Wimplicit-function-declaration]
+  104 |         DIGITS_Display(DIG_A, DIG_B);
+      |         ^~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:250:6: warning: conflicting types for 'DIGITS_Display'; have 'void(uint8_t,  uint8_t)' {aka 'void(unsigned char,  unsigned char)'}
+  250 | void DIGITS_Display(uint8_t DIGIT_A, uint8_t DIGIT_B)
+      |      ^~~~~~~~~~~~~~
+../Core/Src/main.c:104:9: note: previous implicit declaration of 'DIGITS_Display' with type 'void(uint8_t,  uint8_t)' {aka 'void(unsigned char,  unsigned char)'}
+  104 |         DIGITS_Display(DIG_A, DIG_B);
+      |         ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "TIMER BOARD.elf" @"objects.list"   -mcpu=cortex-m4 -T"N:\ECE298\STM32_Workspace\TIMER BOARD\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER BOARD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER BOARD.elf
+ 
+arm-none-eabi-size  TIMER\ BOARD.elf 
+arm-none-eabi-objdump -h -S TIMER\ BOARD.elf  > "TIMER BOARD.list"
+   text	   data	    bss	    dec	    hex	filename
+   8196	     12	   1644	   9852	   267c	TIMER BOARD.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIMER BOARD.list
+ 
+
+19:46:17 Build Finished. 0 errors, 2 warnings. (took 1s.836ms)
+
